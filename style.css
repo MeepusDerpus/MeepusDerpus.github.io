@@ -1,0 +1,30 @@
+
+#menu {
+  position:fixed;
+  z-index:10000;
+  width:140px;
+  background:#1b1a1a;
+  border-radius:5px;
+  transform:scale(0);
+  transform-origin:top left;
+}
+#menu.active {
+  transform:scale(1);
+  transition:transform 300ms ease-in-out;
+}
+#menu .item {
+  padding:6px 10px;
+  font-size:12px;
+  color:#eee;
+}
+#menu .item:hover {
+  background:#555;
+}
+#menu .item i {
+  display:inline-block;
+  margin-right:5px;
+}
+#menu hr {
+  margin:2px 0px;
+  border-color:#555;
+}    
